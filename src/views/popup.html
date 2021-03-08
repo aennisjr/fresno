@@ -7,20 +7,70 @@
     </head>
     <body>
     </body>
-    <body>
+    <body class="fresno-body">
         <div class="content-area">
             <div class="text-center">
-                <h1>Password Generator</h1>
-            </div>
+                <img class="logo" src="../images/icon.png" alt="fresno">
             
-            <label for="password_length">Password Length</label>
-            <input type="number" id="password_length" name="password_length">
+                <div class="w3-bar w3-black">
+                    <button class="fr-toggle-btn">New</button>
+                    <button class="fr-toggle-btn">Saved</button>
+                </div>
+            </div>
 
-            <input type="checkbox" id="include_symbols" name="include_symbols">
-            <label for="include_symbols">Include Symbols (eg. % & $ !)</label>
+            <div id="fr-tab fr-generate-tab" class="city"></div>
+                <div>
+                    <label for="password_length">Password Length</label>
+                    <input type="number" id="password_length" name="password_length" value="10" min="5" max="30">
+                </div>
 
-            <input type="checkbox" id="include_numbers" name="include_numbers">
-            <label for="include_numbers">Include Numbers (eg. 1 2 3 4 5 6)</label>
+                <div>
+                    <input type="checkbox" id="include_symbols" name="include_symbols">
+                    <label for="include_symbols">Include Symbols (eg. % & $ !)</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="include_numbers" name="include_numbers">
+                    <label for="include_numbers">Include Numbers (eg. 1 2 3 4 5 6)</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="include_numbers" name="include_numbers">
+                    <label for="include_numbers">Include Lowercase Characters (eg. a b c d e)</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="include_numbers" name="include_numbers">
+                    <label for="include_numbers">Include Uppercase Characters (eg. A B C D E)</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="include_numbers" name="include_numbers">
+                    <label for="include_numbers">Include Ambiguous Characters (eg. { } [ ] / \ : )</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="include_numbers" name="include_numbers">
+                    <label for="include_numbers">Save Generated Password</label>
+                </div>
+
+                <div class="flex align-items">
+                    <div class="flex-1">
+                        <label for="include_numbers">Generate</label>
+                        <input type="number" id="include_numbers" name="include_numbers" value="1" max="5" min="1">
+                    </div>
+                    <div class="flex-4">
+                        <button class="btn-def submit-btn" id="fr-submit-btn">Generate</button>
+                    </div>
+                </div>
+            </div>
         </div>
+          
+        <div id="fr-tab fr-saved-tab" class="city hidden">
+            <h2>Saved</h2>
+            <p>Paris is the capital of France.</p>
+        </div>
+        
+
     </body>
 </html>
